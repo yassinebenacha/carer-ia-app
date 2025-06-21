@@ -1,0 +1,7 @@
+../react_frontend/
+../my-project/
+*.log
+*.md
+node_modules/
+__pycache__/
+.env

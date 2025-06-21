@@ -1,0 +1,32 @@
+# FastAPI et dépendances web
+httpx
+requests
+python-multipart
+
+# CORS middleware
+fastapi
+uvicorn
+
+# Pydantic pour la validation des données
+pydantic
+
+# Services IA et ML
+google-generativeai
+openai
+sentence-transformers
+scikit-learn
+numpy
+
+# Base de données vectorielle
+qdrant-client
+
+# Traitement PDF
+PyMuPDF
+
+# Logging (inclus dans Python standard)
+# logging est un module standard, pas besoin d'installation
+
+# Utilitaires Python standard (pas besoin d'installation)
+# typing, uuid, datetime, os, re, traceback, io, random
+# urllib.parse sont des modules standard
+
