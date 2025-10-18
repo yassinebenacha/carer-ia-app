@@ -41,7 +41,7 @@ Générez des questionnaires à choix multiples personnalisés basés sur vos do
 ### 🔍 **Assistant de Recherche IA**
 Recherche intelligente avec SerpAPI et analyse Gemini. Trouvez les informations les plus pertinentes sur le web.
 
-### 🤖 **CarerBot - Assistant Virtuel**
+### 🤖 **PrepGenius Bot - Assistant Virtuel**
 Assistant conversationnel intelligent pour répondre à vos questions et vous guider dans votre apprentissage.
 
 ### ⚡ **Health Check**
@@ -52,7 +52,7 @@ Vérification en temps réel de l'état des services et de la disponibilité de 
 ## 🏗️ Architecture
 
 ```
-Career-IA/
+PrepGenius/
 ├── 📁 backend/                 # API FastAPI
 │   ├── app/
 │   │   ├── main.py            # Point d'entrée

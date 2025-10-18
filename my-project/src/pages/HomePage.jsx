@@ -189,9 +189,9 @@ const AuthModal = ({ isOpen, onClose, mode, onSwitchMode }) => {
             {mode === 'signin' ? 'Se connecter' : 'Créer un compte'}
           </h2>
           <p className="text-gray-600 mt-2">
-            {mode === 'signin' 
-              ? 'Connectez-vous à votre compte Career-IA' 
-              : 'Rejoignez Career-IA et boostez votre carrière'}
+            {mode === 'signin'
+              ? 'Connectez-vous à votre compte PrepGenius'
+              : 'Rejoignez PrepGenius et boostez votre carrière'}
           </p>
         </div>
 
@@ -377,8 +377,8 @@ const Navbar = ({ user, onSignOut, onOpenAuth }) => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2 text-2xl font-bold text-teal-600">
-              <img src={logo} alt="Carer-IA Logo" className="h-10 w-10 rounded-full" />
-              <span>Career-IA</span>
+              <img src={logo} alt="PrepGenius Logo" className="h-10 w-10 rounded-full" />
+              <span>PrepGenius</span>
             </Link>
           </div>
           
@@ -426,7 +426,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <p>&copy; 2024 Career-IA. Tous droits réservés.</p>
+        <p>&copy; 2024 PrepGenius. Tous droits réservés.</p>
       </div>
     </footer>
   );
@@ -487,7 +487,7 @@ const HomePage = () => {
         >
           <h1 className="text-5xl font-bold text-blue-800 leading-tight">
             Révélez votre potentiel de carrière avec <br />
-            <span className="text-teal-600">Career-IA</span>
+            <span className="text-teal-600">PrepGenius</span>
           </h1>
           <p className="text-gray-600 mt-6 text-lg">
             Plateforme intelligente pour booster votre carrière : résumés, QCMs, et assistant IA.

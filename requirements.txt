@@ -5,11 +5,11 @@ httpx==0.25.2
 requests==2.31.0
 python-multipart==0.0.6
 
-# CORS middleware
-python-cors==1.7.0
+# CORS middleware (inclus dans FastAPI)
 
 # Pydantic pour la validation des données
 pydantic==2.5.0
+pydantic-settings==2.1.0
 
 # Services IA et ML
 google-generativeai==0.3.2
@@ -24,10 +24,14 @@ qdrant-client==1.7.0
 # Traitement PDF
 PyMuPDF==1.23.8
 
+# Utilitaires supplémentaires
+python-dotenv==1.0.0
+aiofiles==23.2.1
+
 # Logging (inclus dans Python standard)
 # logging est un module standard, pas besoin d'installation
 
 # Utilitaires Python standard (pas besoin d'installation)
-# typing, uuid, datetime, os, re, traceback, io, random
+# typing, uuid, datetime, os, re, traceback, io, random, json, asyncio
 # urllib.parse sont des modules standard
 

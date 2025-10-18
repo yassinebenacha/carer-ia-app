@@ -1,6 +1,6 @@
-# Carer-IA Backend
+# PrepGenius Backend
 
-API complète pour Carer-IA : analyse de PDF, génération de QCM, résumés, recherches intelligentes et assistant chatbot.
+API complète pour PrepGenius : analyse de PDF, génération de QCM, résumés, recherches intelligentes et assistant chatbot.
 
 ## 🚀 Installation
 
@@ -66,7 +66,7 @@ L'API sera disponible sur : http://localhost:8000
 - Endpoint : `POST /api/search`
 - Recherche intelligente avec SerpAPI et analyse Gemini
 
-### 🤖 CarerBot - Assistant virtuel
+### 🤖 PrepGenius Bot - Assistant virtuel
 - Endpoint : `POST /api/chat`
 - Assistant conversationnel intelligent
 

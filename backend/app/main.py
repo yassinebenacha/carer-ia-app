@@ -14,8 +14,8 @@ logger = logging.getLogger(__name__)
 
 # Création de l'application FastAPI
 app = FastAPI(
-    title="Carer-IA API",
-    description="API complète pour Carer-IA : analyse de PDF, génération de QCM, résumés, recherches intelligentes et assistant chatbot",
+    title="PrepGenius API",
+    description="API complète pour PrepGenius : analyse de PDF, génération de QCM, résumés, recherches intelligentes et assistant chatbot",
     version="1.0.0"
 )
 
@@ -44,14 +44,14 @@ app.include_router(chatbot.router, prefix="/api", tags=["ChatBot"])  # Nouveau r
 async def root():
     """Endpoint racine avec des informations sur l'API"""
     return {
-        "message": "Bienvenue sur l'API Carer-IA",
+        "message": "Bienvenue sur l'API PrepGenius",
         "version": app.version,
         "description": "Plateforme gratuite dédiée à l'apprentissage et à la préparation aux examens",
         "features": [
             "📄 Générateur de Résumé de Cours",
-            "🧠 QCM de Compétences", 
+            "🧠 QCM de Compétences",
             "🔍 Assistant de Recherche IA (CrewAI)",
-            "🤖 CarerBot - Assistant virtuel intelligent"
+            "🤖 PrepGenius Bot - Assistant virtuel intelligent"
         ],
         "endpoints": {
             "docs": "/docs",
@@ -74,9 +74,9 @@ async def root():
 
 @app.get("/api/info", tags=["Info"])
 async def get_platform_info():
-    """Informations détaillées sur la plateforme Carer-IA"""
+    """Informations détaillées sur la plateforme PrepGenius"""
     return {
-        "platform": "Carer-IA",
+        "platform": "PrepGenius",
         "description": "Plateforme gratuite dédiée à l'apprentissage et à la préparation aux examens pour les étudiants",
         "tools": {
             "resume_generator": {
@@ -95,8 +95,8 @@ async def get_platform_info():
                 "endpoint": "/api/search"
             },
             "chatbot": {
-                "name": "🤖 CarerBot - Assistant virtuel",
-                "description": "Assistant intelligent pour vous aider à naviguer et utiliser efficacement la plateforme Carer-IA",
+                "name": "🤖 PrepGenius Bot - Assistant virtuel",
+                "description": "Assistant intelligent pour vous aider à naviguer et utiliser efficacement la plateforme PrepGenius",
                 "endpoint": "/api/chat"
             }
         },
@@ -116,7 +116,7 @@ async def get_platform_info():
 
 if __name__ == "__main__":
     import uvicorn
-    logger.info("🚀 Démarrage du serveur Carer-IA API...")
+    logger.info("🚀 Démarrage du serveur PrepGenius API...")
     logger.info("📖 Documentation disponible sur: http://127.0.0.1:8000/docs")
-    logger.info("🤖 CarerBot disponible sur: http://127.0.0.1:8000/api/chat")
+    logger.info("🤖 PrepGenius Bot disponible sur: http://127.0.0.1:8000/api/chat")
     uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)

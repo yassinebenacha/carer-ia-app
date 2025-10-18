@@ -11,9 +11,9 @@ const ChatInterface = () => {
   const [copiedMessageId, setCopiedMessageId] = useState(null);
   const messagesEndRef = useRef(null);
 
-  // Questions rapides adaptées à Carer-IA
+  // Questions rapides adaptées à PrepGenius
   const basicQuestions = [
-    "Qu'est-ce que Carer-IA ?",
+    "Qu'est-ce que PrepGenius ?",
     "Quels sont les outils disponibles ?",
     "Comment fonctionne le générateur de résumé ?",
     "Comment marchent les QCM ?"
@@ -145,7 +145,7 @@ const ChatInterface = () => {
             <MessageCircle className="w-8 h-8 text-white" />
             <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full animate-pulse"></div>
             <div className="absolute -bottom-12 right-0 bg-gray-800 text-white text-sm px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
-              CarerBot - Assistant Carer-IA
+              PrepGenius Bot - Assistant PrepGenius
             </div>
           </button>
         </div>
@@ -163,8 +163,8 @@ const ChatInterface = () => {
                 <MessageCircle className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-semibold">CarerBot</h3>
-                <p className="text-xs opacity-80">Assistant Carer-IA</p>
+                <h3 className="font-semibold">PrepGenius Bot</h3>
+                <p className="text-xs opacity-80">Assistant PrepGenius</p>
               </div>
             </div>
             <div className="flex items-center space-x-2">
@@ -219,8 +219,8 @@ const ChatInterface = () => {
                 {messages.length === 0 && (
                   <div className="text-center py-8">
                     <MessageCircle className="w-12 h-12 text-gray-300 mx-auto mb-4" />
-                    <p className="text-gray-500">Bonjour ! Je suis CarerBot 🤖</p>
-                    <p className="text-sm text-gray-400 mt-1">Posez-moi des questions sur Carer-IA</p>
+                    <p className="text-gray-500">Bonjour ! Je suis PrepGenius Bot 🤖</p>
+                    <p className="text-sm text-gray-400 mt-1">Posez-moi des questions sur PrepGenius</p>
                   </div>
                 )}
                 
@@ -306,7 +306,7 @@ const ChatInterface = () => {
                       value={inputMessage}
                       onChange={(e) => setInputMessage(e.target.value)}
                       onKeyDown={handleKeyPress}
-                      placeholder="Posez votre question sur Carer-IA..."
+                      placeholder="Posez votre question sur PrepGenius..."
                       disabled={loading}
                       className="w-full resize-none rounded-xl border border-gray-300 px-4 py-3 pr-12 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed text-sm"
                       style={{ minHeight: '48px', maxHeight: '120px' }}
@@ -326,7 +326,7 @@ const ChatInterface = () => {
                   </button>
                 </div>
                 <div className="mt-2 text-xs text-gray-400 text-center">
-                  Propulsé par CarerBot - Assistant IA de Carer-IA
+                  Propulsé par PrepGenius Bot - Assistant IA de PrepGenius
                 </div>
               </div>
             </>

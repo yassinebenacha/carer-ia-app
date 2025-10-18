@@ -8,8 +8,8 @@ const Navbar = () => {
     <nav className="bg-white shadow-md py-4 px-6 flex justify-between items-center">
       {/* Logo & Nom */}
       <Link to="/" className="flex items-center space-x-3">
-        <img src={logo} alt="Carer-IA Logo" className="h-10 w-auto rounded-full" />
-        <span className="text-2xl font-bold text-blue-800 tracking-wide">Career-IA</span>
+        <img src={logo} alt="PrepGenius Logo" className="h-10 w-auto rounded-full" />
+        <span className="text-2xl font-bold text-blue-800 tracking-wide">PrepGenius</span>
       </Link>
 
       {/* Navigation links */}
